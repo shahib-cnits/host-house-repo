@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+ 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --primary-color: #483875;
+    --secondary-color: #F54646;
+    --white: #fff;
+    --black: #000;
+    --primary-font: "Ubuntu";
+    --secondary-font: "Raleway";
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 , h2, h3, h4, h5, h6{
+    font-family: var(--primary-font);
+}
+p{
+    font-family: var(--secondary-font);
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+
+
+/*nav section*/
+
+.nav-btn:hover{
+    background-color: #FF6F6F;
+
+}
+@media screen and (max-width: 970px) {
+    .nav-button button{
+        margin-left: 0px !important;
+    }
+    
+}
+/*nav section */
+
+
+
+/* Hero start*/
+
+#hero-section{
+    /* -image: url(../img/home_img/hero-2.png); */
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero-img{
+    background-image: url(../img/contact_img/Rectangle\ 25.png);
+    width: 100%;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.heading h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 40px;
+    
+}
+.heading p{
+    text-align: center;
+}
+.heading p a{
+    text-decoration: none;
+    color: white;
+    /* padding: 15px 30px;
+    background-color: #FF6F6F;
+    border: none;
+    border-radius: 5px; */
+    font-size: 15px;
+}
+@media screen and (max-width: 570px) {
+    .heading h1{
+        font-size: 50px;
+    }
+    
+}
+
+/* hero end*/
+
+
+
+/*contact address section start*/
+
+
+.contact-address-items{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+}
+.contact-address-card{
+    width: 60%;
+}
+.contact-address-card p button{
+    font-weight: 600;
+    padding: 10px 35px;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    
+}
+.contact-address-card h1{
+    color: var(--secondary-color);
+    text-shadow: -3px -3px #fd9191;
+}
+.view-map-btn{
+    padding-left: 100px;
+}
+.contact-cards{
+    padding: 80px 0px;
+}
+.contact-card{
+    text-align: center;
+    padding: 20px  30px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 9px;
+    color: #fff;
+}
+.contact-card h5{
+    padding: 15px 0px;
+    font-size: 17px;
+    font-weight: 700;
+
+}
+@media screen and (max-width: 770px) {
+    .contact-card{
+        margin-bottom: 30px;
+    }
+    
+}
+@media screen and (max-width: 990px) {
+    .contact-card{
+        margin-bottom: 30px;
+    }
+    
+}
+
+
+
+
+/*data location start*/
+
+#data-location-section{
+    padding-top: 150px;
+}
+.data-location-heading{
+    text-align: center;
+}
+.data-location-img img{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+
+}
+.data-location-img{
+    position: relative;
+}
+/* .data-location-img::after{
+    content: "bangladesh";
+    position: absolute;
+    width: 90px;
+    height: 25px;
+    top: 33%;
+    left: 40%;
+    padding-left: 5px;
+    border-top-right-radius: 3px solid var(--black);
+    background-color: var(--secondary-color);
+} */
+.bangladesh-tooltip{
+    position: absolute;
+    display: inline-block;
+    padding: 0px 10px;
+    top: 61%;
+    right: 19%;
+    color: white;
+    background-color: var(--secondary-color);
+    
+}
+.bangladesh-tooltip::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 60%;
+    margin-left: -20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: var(--secondary-color) transparent transparent transparent;
+}
+.ban-tooltip-text{
+    visibility: hidden;
+    width: 200px;
+    position: absolute;
+    bottom: 120%;
+    left: -50%;
+    background-color: var(--white);
+    
+}
+/* .bangladesh-tooltip .ban-tooltip-text::after{
+    content: "";
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    margin-left: -20px;
+    border-width: 10px;
+    border-style: solid;
+    
+    border-color: transparent white transparent transparent;
+    
+
+} */
+.bangladesh-tooltip:hover .ban-tooltip-text{
+    visibility: visible;
+}
+.america-tooltip{
+    position: absolute;
+    display: inline-block;
+    padding: 0px 10px;
+    top: 50%;
+    left: 20%;
+    color: white;
+    background-color: var(--secondary-color);
+    
+}
+.america-tooltip::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 65%;
+    margin-left: -20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: var(--secondary-color) transparent transparent transparent;
+}
+.ame-tooltip-text{
+    visibility: hidden;
+    width: 200px;
+    position: absolute;
+    bottom: 120%;
+    left: -50%;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background-color: var(--white);
+    
+}
+
+.america-tooltip:hover .ame-tooltip-text{
+    visibility: visible;
+}
+.brazil-tooltip{
+    position: absolute;
+    display: inline-block;
+    padding: 0px 10px;
+    top: 32%;
+    left: 20%;
+    color: white;
+    background-color: var(--secondary-color);
+    
+}
+.brazil-tooltip::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 65%;
+    margin-left: -20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: var(--secondary-color) transparent transparent transparent;
+}
+.bra-tooltip-text{
+    visibility: hidden;
+    width: 200px;
+    position: absolute;
+    bottom: 120%;
+    left: -50%;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background-color: var(--white);
+    
+}
+
+.brazil-tooltip:hover .bra-tooltip-text{
+    visibility: visible;
+}
+.india-tooltip{
+    position: absolute;
+    display: inline-block;
+    padding: 0px 10px;
+    top: 62%;
+    right: 27%;
+    color: white;
+    background-color: var(--secondary-color);
+    
+}
+.india-tooltip::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 65%;
+    margin-left: -20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: var(--secondary-color) transparent transparent transparent;
+}
+.ind-tooltip-text{
+    visibility: hidden;
+    width: 200px;
+    position: absolute;
+    bottom: 120%;
+    left: -50%;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background-color: var(--white);
+    
+}
+
+.india-tooltip:hover .ind-tooltip-text{
+    visibility: visible;
+}
+.russia-tooltip{
+    position: absolute;
+    display: inline-block;
+    padding: 0px 10px;
+    top: 40%;
+    right: 25%;
+    color: white;
+    background-color: var(--secondary-color);
+    
+}
+.russia-tooltip::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 65%;
+    margin-left: -20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: var(--secondary-color) transparent transparent transparent;
+}
+.rus-tooltip-text{
+    visibility: hidden;
+    width: 200px;
+    position: absolute;
+    bottom: 120%;
+    left: -50%;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    color: var(--black);
+    background-color: var(--white);
+    
+}
+.russia-tooltip:hover .rus-tooltip-text{
+    visibility: visible;
+}
+.indonasia-tooltip{
+    position: absolute;
+    display: inline-block;
+    padding: 0px 10px;
+    bottom: 17%;
+    right: 7%;
+    color: white;
+    background-color: var(--secondary-color);
+    
+}
+.indonasia-tooltip::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 65%;
+    margin-left: -20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: var(--secondary-color) transparent transparent transparent;
+}
+.indo-tooltip-text{
+    visibility: hidden;
+    width: 200px;
+    position: absolute;
+    bottom: 120%;
+    left: -50%;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background-color: var(--white);
+    
+}
+.indonasia-tooltip:hover .indo-tooltip-text{
+    visibility: visible;
+}
+.data-location-button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+.data-location-button button{
+    padding: 3px 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: #fff;
+}
+@media screen and (max-width:570px) {
+    #data-location-section{
+        padding-top: 100px;
+
+    }
+    .data-location-button button{
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 990px) {
+    .data-location-button button{
+        margin-bottom: 10px;
+    }
+    
+}
+/* data location section end*/
+
+
+
+/*contact form section start*/
+
+#contact-form-section{
+    padding-bottom: 50px;
+}
+
+
+.contact-form-heading{
+    padding: 50px 0px;
+    text-align: center;
+}
+.contact-form-heading h2{
+    font-size: 35px;
+    font-weight: 700;
+}
+.name-subject-masseges-input{
+    width: 100%;
+}
+.input-name{
+    width: 100%;
+    margin-bottom: 30px;
+    color: gray;
+    padding: 10px 0px;
+    font-size: 15px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    padding-left: 10px;
+}
+/* .input-name,.input-email,::placeholder{
+    padding-left: 10px;
+} */
+.input-select{
+    width: 100%;
+    margin-bottom: 30px;
+    color: gray;
+    padding: 10px 0px;
+    font-size: 15px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    padding-left: 7px;
+
+}
+.form-textarea{
+    width: 100%;
+    margin-bottom: 30px;
+    color: gray;
+    font-size: 15px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+
+}
+.input-phone{
+    width: 100%;
+    margin-bottom: 30px;
+    color: gray;
+    padding: 10px 0px;
+    font-size: 15px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    padding-left: 10px;
+
+}
+.input-email{
+    width: 100%;
+    margin-bottom: 30px;
+    color: gray;
+    padding: 10px 0px;
+    font-size: 15px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    padding-left: 10px;
+
+}
+.email-phone-submit button{
+    padding: 10px 45px;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 9px;
+    background-color: var(--primary-color);
+
+}
+.form-check{
+    margin-top: 25px;
+}

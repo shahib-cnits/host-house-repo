@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+ 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --primary-color: #483875;
+    --secondary-color: #F54646;
+    --white: #fff;
+    --black: #000;
+    --primary-font: "Ubuntu";
+    --secondary-font: "Raleway";
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 , h2, h3, h4, h5, h6{
+    font-family: var(--primary-font);
+}
+p{
+    font-family: var(--secondary-font);
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+
+/*nav section*/
+
+.nav-btn:hover{
+    background-color: #FF6F6F;
+
+}
+@media screen and (max-width: 970px) {
+    .nav-button button{
+        margin-left: 0px !important;
+    }
+    
+}
+/*nav section */
+
+
+/* Hero start*/
+
+#hero-section{
+    /* -image: url(../img/home_img/hero-2.png); */
+    /* width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+}
+.hero-img{
+    background-image: url(../img/about-us_img/about.png);
+    width: 100%;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.heading h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 40px;
+    
+}
+.heading p{
+    text-align: center;
+}
+.heading p a{
+    text-decoration: none;
+    color: white;
+    /* padding: 15px 30px;
+    background-color: black;
+    border: none;
+    border-radius: 5px; */
+    font-size: 15px;
+}
+@media screen and (max-width: 570px) {
+    .heading h1{
+        font-size: 50px;
+    }
+    
+}
+
+/* hero end*/
+
+
+
+
+
+/*welcome to host house company seciton start*/
+
+
+
+
+.welcome-host-house-img{
+    width: 100%;
+}
+.welcome-host-house-img img{
+    width: 100%;
+    
+    background-size: cover;
+
+}
+.welcome-host-house-text h3{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+.welcome-host-house-text p{
+    color: var(--secondary-color);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px 0px;
+}
+.welcome-host-house{
+    padding: 50px 0px;
+
+}
+.welcome-host-house-text ul li svg{
+    height: 23px;
+    width: 23px;
+
+}
+.welcome-host-house-text li{
+    padding: 10px 0px;
+}
+/* welcome to host house section end*/
+
+
+
+
+/* pick you perfect web hosting plan*/
+
+.pick-perfect-hosting-plan-heading{
+    text-align: center;
+    padding: 50px 0px;
+}
+.pick-perfect-hosting-plan-heading h2{
+    font-size: 35px;
+    font-weight: 600;
+}
+.pick-perfect-hosting-plan-card{
+    text-align: center;
+    padding: 0px 30px;
+}
+.pick-perfect-hosting-plan-card h5{
+    padding: 20px 0px;
+
+}
+
+/* pick you perfect web hosting plan end*/
+
+
+
+
+
+/* Our Skills and Expertise start*/
+
+/* .proggress-bar{
+width: 100%;
+height: 50px;
+padding-bottom: 100px;
+} */
+
+.skill-and-expertise-heading{
+text-align: center;
+padding: 100px 0px;
+padding-bottom: 50px;
+}
+.social-proggess-bar{
+width: 100%;
+padding-bottom: 50px;
+/* padding: 30px; */
+
+}
+.social-proggress-bar-heading{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.social-proggress-bar-chart{
+width: 100%;
+height: 10px;
+border: none;
+border-radius: 15px;
+background-color: #FFCCCC;
+position: relative;
+}
+.social-proggress-bar-child-chart{
+position: absolute;
+width: 70%;
+height: 10px;
+border: none;
+border-radius: 15px;
+background-color: var(--secondary-color);
+top: 0;
+left: 0;
+z-index: 2;
+
+
+}
+.marketing-proggess-bar{
+width: 100%;
+/* padding: 30px; */
+}
+.marketing-proggress-bar-heading{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.marketing-proggress-bar-chart{
+width: 100%;
+height: 10px;
+border: none;
+border-radius: 15px;
+background-color: #D9CCFF;
+position: relative;
+}
+.marketing-proggress-bar-child-chart{
+position: absolute;
+width: 70%;
+height: 10px;
+border: none;
+border-radius: 15px;
+background-color: var(--primary-color);
+top: 0;
+left: 0;
+z-index: 2;
+
+}
+/* Our Skills and Expertise end*/
+
+
+
+
+
+/*meet expert section start*/
+.meet-expert-heading{
+    text-align: center;
+    padding: 50px 0px;
+}
+.meet-expert-heading h2{
+    font-size: 35px;
+    font-weight: 35px;
+    
+}
+
+ /*card carousel start*/
+ .swiper {
+    width: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-carousel-img {
+    width: 100%;
+  }
+
+  .card-carousel-img img{
+    width: 100% !important;
+    height: auto;
+    object-fit: cover;
+  }
+  .card-carousel-items h5{
+    padding: 5px 0px;
+    margin-bottom: 0px;
+  }
+  .card-carousel-items p svg{
+    margin-right: 10px;
+  }
+  .card-carousel-items p{
+    margin: 0px;
+    padding: 10px 0px;
+  }
+  .swiper-pagination-bullet-active{
+    background-color: var(--secondary-color);
+  }
+  /*meet our expert section end*/
+
+
+
+/* ask any question section start*/
+
+.ask-any-question-heading{
+    text-align: center !important;
+}
+.ask-any-question-heading h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    padding: 50px 0px;
+    padding-bottom: 0px;
+}
+
+.ask-question{
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+.question h5{
+    color: var(--secondary-color);
+    font-size: 22px;
+    font-weight: 600;
+}
+.question svg{
+    height: 30px;
+    width: 30px;
+}
+.faq{
+    /* max-width: 700px; */
+    padding-right: 50px;
+
+}
+.answer{
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 1.3s ease;
+}
+.faq.active .answer{
+    max-height: 300px;
+}
+.faq.active svg{
+    transform: rotate(180deg);
+}
+.question svg{
+    transition: transform 0.5s ease-in-out;
+}
+/* ask any question section end*/
+
+
+
+
+/*money back seciton start*/
+
+
+#money-back-section{
+
+    background-color: #EAE2FF;
+    padding: 80px 0px;
+}
+
+.money-back{
+    text-align: center;
+}
+.money-back h3{
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+.money-back p{
+    color: var(--secondary-color);
+    
+    font-size: 25px;
+    font-weight: 700;
+    padding: 0px 250px;
+    
+}
+.money-back button{
+    padding: 15px 45px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 9px;
+}
+
